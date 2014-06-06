@@ -45,7 +45,7 @@ $nav-placeholder: desaturate(darken($nav-bg, 10), 15) !default;
 
 /* Sidebar colors */
 $sidebar-bg: $darkBrick !default;
-$sidebar-link-color: $white !default;
+$sidebar-link-color: $yellow !default;
 $sidebar-link-color-hover: $darkBrick !default;
 $sidebar-link-color-active: $darkBrick !default;
 $sidebar-color: change-color(mix($text-color, $sidebar-bg, 80), $hue: hue($sidebar-bg), $saturation: saturation($sidebar-bg)/2) !default;

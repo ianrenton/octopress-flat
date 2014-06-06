@@ -8,7 +8,7 @@ article {
     position: relative;
     padding-top: 2em;
     padding-bottom: 1em;
-    margin-bottom: 1em;
+    margin-bottom: 0em;
     background: $img-border bottom left repeat-x;
     h1 {
       margin: 0;
@@ -26,8 +26,6 @@ article {
       }
     }
     @media only screen and (min-width: 768px) {
-      margin-bottom: 1.5em;
-      padding-bottom: 1em;
       background: $img-border bottom left repeat-x;
     }
   }
@@ -43,7 +41,7 @@ article {
     margin-bottom: 1em;
     padding-bottom: 1em;
     background: $img-border bottom left repeat-x;
-    font-size: 2.0em; font-style: italic;
+    font-size: 2.2em; font-style: italic;
     line-height: 1.3em;
   }
   img, video, .flash-video {
@@ -96,7 +94,7 @@ article + article {
   article { padding-top: 2em; }
   article header { background: none; padding-bottom: 0; }
   article h1 {
-    font-size: 2em;
+    font-size: 2.5em;
     a { 
       color: inherit;
       &:hover { 

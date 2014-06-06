@@ -1,2 +1,81 @@
 // This File is imported last, and will override other styles in the cascade
 // Add styles here to make changes without digging in too much
+
+/**************************************
+ * Jonjoe's Sharing-Buttons
+ *************************************/
+ 
+$facebook:    #3b5998;
+$twitter:        #23abf2;
+$google:        #c7392c;
+$linkdIn:        #007bb6;
+
+@mixin setBgColorAndHover($theColor) {
+    background-color: $theColor;
+    &:hover {
+          background-color: darken($theColor, 15%);
+    }
+}
+
+.sharing-buttons {
+	a {
+		display:table;
+		float:left;
+		text-decoration: none !important;
+		transition:background 1s;
+		// border:1px solid black;
+		&:hover {
+			text-decoration: none;
+		}
+		&:nth-child(1) { /*Twitter Button*/
+			// border-radius: 10px 0 0 10px;
+			background:$twitter;
+			&:hover{
+				@include setBgColorAndHover($twitter);
+			}
+		}
+		&:nth-child(2) { /*Facebook Button*/
+			background:$facebook;
+			&:hover{
+				@include setBgColorAndHover($facebook);
+			}
+		}
+		&:nth-child(3) { /*Google Button*/
+			background:$google;
+			&:hover{
+				@include setBgColorAndHover($google);
+			}
+		}
+		&:nth-child(4) { /*Linkdin Button*/
+			// border-radius:  0 10px 10px 0;
+			background:$linkdIn;
+			&:hover{
+				@include setBgColorAndHover($linkdIn);
+			}
+		}
+		p   {
+			text-align:center;
+			display: table-cell;
+			vertical-align: middle;
+			color:white;
+			font-weight:500;
+			-webkit-font-smoothing: antialiased;
+			font-family: $sans;
+			font-size: 14px;
+			font-weight: 200;
+			line-height: 1.5;
+		}
+	}
+}
+
+
+.sharing-buttons.horiz {
+	width:400px;
+	height:40px;
+	margin:20px auto;
+	a {
+		height:100%;
+		width:24%;
+		// margin:0 0.5px;
+	}
+}
